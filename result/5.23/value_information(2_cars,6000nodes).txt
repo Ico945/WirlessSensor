@@ -1,0 +1,11 @@
+# car id; round id; time; car's charge queue size
+3
+3
+116
+134
+3063
+2691
+2725
+2978
+2724
+3094
