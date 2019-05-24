@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c6344ab-2c63-4d83-b4c8-6fbfd754626a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entry/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entry/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entry/Station.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/old/My_idea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/old/TADP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WirlessSensor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WirlessSensor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WirlessSensor/My_idea.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WirlessSensor/NJNP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WirlessSensor/TSP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WirlessSensor/chat_name$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WirlessSensor/chat_name.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/My_idea.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NJNP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/old/NJNP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TADP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/old/TSP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chat_name.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Util.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utils/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="128" column="36" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
+            <state relative-caret-position="342">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,8 +82,8 @@
         <option value="$PROJECT_DIR$/src/entry/Car.java" />
         <option value="$PROJECT_DIR$/result/TSP_plus+_only_energy(2_cars,5000nodes).txt" />
         <option value="$PROJECT_DIR$/src/entry/Node.java" />
-        <option value="$PROJECT_DIR$/src/utils/Util.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/utils/Util.java" />
       </list>
     </option>
   </component>
@@ -226,12 +200,12 @@
       <workItem from="1558325763353" duration="472000" />
       <workItem from="1558335976587" duration="1756000" />
       <workItem from="1558337911064" duration="18723000" />
-      <workItem from="1558580766304" duration="15926000" />
+      <workItem from="1558580766304" duration="16078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102315000" />
+    <option name="totallyTimeSpent" value="102467000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -246,7 +220,7 @@
     <frame x="180" y="23" width="1706" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.265625" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.265625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -255,7 +229,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993447" visible="true" weight="0.17202072" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993447" weight="0.17202072" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47668394" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -485,8 +459,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="128" column="36" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
+        <state relative-caret-position="342">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

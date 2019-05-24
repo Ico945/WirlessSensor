@@ -85,13 +85,13 @@ public class Util {
 
         //  先到先服务
         List<Node> chargeQueue2 = car.getChargeQueue2();
-        chargeQueue2.sort(Comparator.comparing(Node::getRequestTime));
-        car.setChargeQueue(chargeQueue2);
-
-        HashMap<Node, Integer> timeMap = new HashMap<>();
-        for (Node node : chargeQueue2) {
-            timeMap.put(node, chargeQueue2.indexOf(node)+1);
-        }
+//        chargeQueue2.sort(Comparator.comparing(Node::getRequestTime));
+//        car.setChargeQueue(chargeQueue2);
+//
+//        HashMap<Node, Integer> timeMap = new HashMap<>();
+//        for (Node node : chargeQueue2) {
+//            timeMap.put(node, chargeQueue2.indexOf(node)+1);
+//        }
 
         //  TSP
         List<Node> cq = new ArrayList<>();
@@ -125,47 +125,47 @@ public class Util {
 //        }
 
         //  增加高效节点，加入充电序列
-//        List<Node> cq2 = new ArrayList<>(cq);
-//        for (int i=0; i<cq.size()-1; i++) {
-//            for (Node node : allNodes) {
-//                if (!node.getResponse()) {
-//                    double d1 = Util.distance(cq.get(i).getLocation(), node.getLocation());
-//                    double d2 = Util.distance(cq.get(i+1).getLocation(), node.getLocation());
-//                    double d3 = Util.distance(cq.get(i).getLocation(), cq.get(i+1).getLocation());
-//                    if ( Math.pow(d1, 2)+Math.pow(d2, 2)<Math.pow(d3, 2) && d1+d2-d3<increaseThreshold) {
-//                        node.setResponse(true);
-//                        cq2.add(node);
-//                    }
-//                }
-//            }
-//        }
-//        //  重新生成TSP
-//        cq = new ArrayList<>();
-//        loc = car.getLocation().clone();
-//        while (!cq2.isEmpty()) {
-//            Node node = null;
-//            double minDistance = Integer.MAX_VALUE;
-//            for (Node n : cq2) {
-//                if (minDistance>Util.distance(n.getLocation(), loc)) {
-//                    minDistance = Util.distance(n.getLocation(), loc);
-//                    node = n;
-//                }
-//            }
-//            loc = node.getLocation().clone();
-//            cq.add(node);
-//            cq2.remove(node);
-//        }
+        List<Node> cq2 = new ArrayList<>(cq);
+        for (int i=0; i<cq.size()-1; i++) {
+            for (Node node : allNodes) {
+                if (!node.getResponse()) {
+                    double d1 = Util.distance(cq.get(i).getLocation(), node.getLocation());
+                    double d2 = Util.distance(cq.get(i+1).getLocation(), node.getLocation());
+                    double d3 = Util.distance(cq.get(i).getLocation(), cq.get(i+1).getLocation());
+                    if ( Math.pow(d1, 2)+Math.pow(d2, 2)<Math.pow(d3, 2) && d1+d2-d3<increaseThreshold) {
+                        node.setResponse(true);
+                        cq2.add(node);
+                    }
+                }
+            }
+        }
+        //  重新生成TSP
+        cq = new ArrayList<>();
+        loc = car.getLocation().clone();
+        while (!cq2.isEmpty()) {
+            Node node = null;
+            double minDistance = Integer.MAX_VALUE;
+            for (Node n : cq2) {
+                if (minDistance>Util.distance(n.getLocation(), loc)) {
+                    minDistance = Util.distance(n.getLocation(), loc);
+                    node = n;
+                }
+            }
+            loc = node.getLocation().clone();
+            cq.add(node);
+            cq2.remove(node);
+        }
 
-//        car.setChargeQueue(cq);
+        car.setChargeQueue(cq);
 
 
         //  简单加权
-        for (int i=0; i<cq.size(); i++) {
-            Node node = cq.get(i);
-            node.setWeight(0.5*(i+1) + 0.5*timeMap.get(node));
-        }
-        cq.sort(Comparator.comparing(Node::getWeight));
-        car.setChargeQueue(cq);
+//        for (int i=0; i<cq.size(); i++) {
+//            Node node = cq.get(i);
+//            node.setWeight(0.5*(i+1) + 0.5*timeMap.get(node));
+//        }
+//        cq.sort(Comparator.comparing(Node::getWeight));
+//        car.setChargeQueue(cq);
 
 
         car.setChargeQueue2(new ArrayList<>());
